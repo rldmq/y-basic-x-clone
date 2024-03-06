@@ -1,0 +1,198 @@
+/* 
+    GLOBAL
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: #14171A;
+    /* background: red; */
+}
+
+/* 
+    TYPOGRAPHY
+*/
+@font-face{
+    font-family: logoFont;
+    src: url("./assets/fonts/SpecialAlphabets-4.eot");
+    src: local("Special Alphabets 4"),
+            local("SpecialAlphabets-4"),
+            url("./assets/fonts/SpecialAlphabets-4.eot#iefix") format("embedded-opentype"),
+            url("./assets/fonts/SpecialAlphabets-4.woff2") format("woff2"),
+            url("./assets/fonts/SpecialAlphabets-4.woff") format("woff"),
+            url("./assets/fonts/SpecialAlphabets-4.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.logo{
+    font-family: "logoFont";
+    font-size: 50px;
+}
+
+/* 
+    APP
+*/
+header, main{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #F5F8FA;
+}
+
+header{
+    padding: 10px 20px 0 20px;
+}
+
+.user-twyyt-area-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 20px;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #c5d1da;
+}
+
+.user-twyyt-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user-twyyt-text{
+    resize: none;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.twyyt-btn{
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background: #1DA1F2;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.twyyt-btn:active{
+    transform: translate(1px, 1px);
+}
+
+/* 
+    FEED
+*/
+
+.feed{
+    margin: 0 20px;
+}
+
+.feed-twyyt:last-child{
+    border: none;
+}
+
+.replies-twyyt:last-child{
+    border: none;
+}
+
+/* 
+    TWYYT
+*/
+.feed-twyyt{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.delete-btn{
+    position: absolute;
+    border: none;
+    right: 0px;
+    top: 5px;
+    padding: 5px;
+    background: #F5F8FA;
+    cursor: pointer;
+}
+
+.delete-btn:active{
+    transform: translate(1px, 1px)
+}
+
+.user-twyyt, .replies-twyyt{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #c5d1da;
+}
+
+.user-twyyt-content, .replies-twyyt-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.handle{
+    font-size: 14px;
+    color: #657786;
+}
+
+.interactions{
+    display: flex;
+    gap: 30px;
+    user-select: none;
+}
+
+.interact-btn{
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.likes,
+.retwyyts{
+    color: #AAB8C2;
+}
+
+.liked{
+    color: rgb(247,0,81);
+}
+
+.retwyyted{
+    color: rgb(37,202,135);
+}
+
+/* 
+    REPLIES
+*/
+.replies{
+    margin-left: 30px;
+}
+
+.hidden{
+    display: none;
+}
